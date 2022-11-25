@@ -18,6 +18,13 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
+      <Script
+        id="autoadsbygoogle"
+        async={true}
+        strategy="beforeInteractive"
+        crossOrigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182&crossorigin=anonymous"
+      />
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
         <div className="flex flex-col items-center my-6 xl:flex-row gap-x-12 xl:mb-12">
