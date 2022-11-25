@@ -9,9 +9,11 @@ export default function Projects() {
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
       <Script
+        id="autoadsbygoogle"
         async={true}
         strategy="beforeInteractive"
-        src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182"crossorigin="anonymous"'
+        crossOrigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182&crossorigin=anonymous"
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
