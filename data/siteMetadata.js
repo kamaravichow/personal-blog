@@ -16,15 +16,15 @@ const siteMetadata = {
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: false, // e.g. tailwind-nextjs-starter-blog.vercel.app
-    simpleAnalytics: true, // true or false
-    googleAnalyticsId: 'UA-100201704-1', // e.g. UA-000000-2 or G-XXXXXXX
+    simpleAnalytics: false, // true or false
+    googleAnalyticsId: 'G-2SC8HB4RM0', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
     // Please add your .env file and modify it according to your selection
     provider: 'emailOctopus',
   },
   comment: {
-    provider: '', // supported providers: giscus, utterances, disqus
+    provider: 'disqus', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       repo: '', // username/repoName
       // Visit the link below, enter your repo in the configuration section and copy the script data parameters
@@ -59,7 +59,7 @@ const siteMetadata = {
     },
     disqus: {
       // https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-      shortname: '',
+      shortname: 'aravind-chowdary',
     },
   },
 }
