@@ -31,8 +31,7 @@ export default function Home({ posts }) {
               Hi, I’m Aravind Chowdary
             </h1>
             <h2 className="text-lg prose text-gray-600 dark:text-gray-400">
-              {`Welcome to my blog - ${siteMetadata.description}. I am the co-founder of Cylynx, a data
-            scientist by profession and economist by training. In my free time, I like developing `}
+              {`Welcome to my blog - ${siteMetadata.description}.  In my free time, I like developing `}
               <Link href="/projects">side projects</Link>
               {' and '}
               <Link href="/blog">blogging</Link>
