@@ -1,7 +1,7 @@
 ---
 title: How actually Movies are Recommended to you and Build one yourself
 date: '2022-11-25'
-tags: ['ml','recommenders']
+tags: ['ml', 'recommenders']
 draft: false
 summary: Recommendation systems are pretty common these days. Netflix, Prime Video, YouTube and other streaming platforms use these recommendation systems to suggest a movie that you might like to watch according to your previous watch history.
 images: []
@@ -9,7 +9,6 @@ layout: PostLayout
 ---
 
 Recommendation systems are pretty common these days. Netflix, Prime Video, YouTube and other streaming platforms use these recommendation systems to suggest a movie that you might like to watch according to your previous watch history.
-
 
 Hearing this for the first time, got me excited. I started researching and building a simple prototype of a movie recommendation algorithm. I’ll walk you thought what I learnt from my research and building a working engine.
 
@@ -27,13 +26,11 @@ After we select a few titles that we might have watched already on TV or on Netf
 
 Netflix starts to use its own recommendation algorithm to predict or suggest the movies or shows that you probably might like to watch.
 
-
 ![Image for post](https://miro.medium.com/max/2376/1*h78cDBQwysvO2rCqU12aLQ.png)
 
 Personalising…| Netflix
 
 After the algorithm predicts movies that match your interests based on the data you’ve provided previously. It shows similar titles on its home page to improve user experience. This way you don’t need to find a movie that you find interesting.
-
 
 ![Image for post](https://miro.medium.com/max/2378/1*DzcPEvK0hCHiDPFBo5fa9A.png)
 
@@ -85,7 +82,6 @@ It basically comes up with a mathematical number of similarities between the cas
 
 **The math behind the Cosine Similarity:**
 
-
 ![Image for post](https://miro.medium.com/max/1215/1*kngtl_qt3UAGww9O7_gEJg.png)
 
 Vector Representation | Cosine Similarity
@@ -99,7 +95,6 @@ The Angular Distance: The Theta, angular distance between those vectors,
 The Euclidean Distance: Connect the ends of the vectors and the length is the Euclidean distance.
 
 We’re going to use the CosTheta Formula, Which most of you might come across in high school.
-
 
 ![Image for post](https://miro.medium.com/max/536/1*CHTUjtaensX3H8pxh9lYLQ.png)
 
@@ -176,7 +171,6 @@ https://github.com/kamaravichow/MovieRecommendations/blob/master/movie_dataset.c
 
 If you open it in excel or an office software it should look like :
 
-
 ![Image for post](https://miro.medium.com/max/2375/1*z1Gc1H2UEXiF-18xVUqYug.png)
 
 IMDB cleaned Dataset | movies_dataset.csv
@@ -192,8 +186,8 @@ df = pd.read_csv("movie_dataset.csv")
 We use pandas to read the CSV dataset and load it to df (DataFrame) variable.
 
 ```
-def get_title_from_index(index): 
-    return df[df.index == index]["title"].values[0] def get_index_from_title(title): 
+def get_title_from_index(index):
+    return df[df.index == index]["title"].values[0] def get_index_from_title(title):
     return df[df.title == title]["index"].values[0]
 ```
 
@@ -210,7 +204,7 @@ You can use other features too according to your requirement.
 Let’s now combine all the features to the dataframe :
 
 ```
-for feature in features: 
+for feature in features:
     df[feature] = df[feature].fillna('')
 ```
 
@@ -231,7 +225,7 @@ print "Combined Features:", df["combined_features"].head()
 Now let’s initialise count vectoriser to turn them into vectors which we can work with :
 
 ```
-cv = CountVectorizer() 
+cv = CountVectorizer()
 count_matrix = cv.fit_transform(df["combined_features"])
 ```
 
