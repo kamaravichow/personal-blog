@@ -6,7 +6,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Script from 'next/script'
-import { Analytics } from '@vercel/analytics/react'
 
 const MAX_DISPLAY = 5
 
@@ -20,7 +19,6 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <Analytics />
       <Script
         id="autoadsbygoogle"
         async={true}
