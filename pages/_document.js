@@ -40,7 +40,7 @@ class MyDocument extends Document {
           {/* https://xahidex.com/blog/nextjs-adsense */}
           <script
             async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}`}
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182`}
             crossOrigin="anonymous"
           />
         </Head>
