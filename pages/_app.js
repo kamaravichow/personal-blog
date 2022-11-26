@@ -14,6 +14,12 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
+      <Script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        strategy="lazyOnload"
+        crossOrigin="anonymous"
+      />
       <Analytics />
       <LayoutWrapper>
         <Component {...pageProps} />
