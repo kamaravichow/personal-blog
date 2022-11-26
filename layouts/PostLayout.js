@@ -40,23 +40,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </dd>
                 </div>
               </dl>
-
-              <Script
-                id="adsbygoogle"
-                data-ad-client="ca-pub-7463578811537182"
-                data-ad-slot="6382917894"
-                data-ad-format="fluid"
-                data-ad-layout="in-article"
-                style={{ display: 'block', textAlign: 'center' }}
-                async={true}
-                crossOrigin="anonymous"
-                strategy="beforeInteractive"
-                onError={(e) => {
-                  console.error('Script failed to load', e)
-                }}
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182"
-              />
-
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>

@@ -6,6 +6,7 @@ import Head from 'next/head'
 
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,6 +14,13 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
+      <Script
+        id="autoadsbygoogle"
+        async={true}
+        strategy="beforeInteractive"
+        crossOrigin="anonymous"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7463578811537182&crossorigin=anonymous`}
+      />
       <Analytics />
       <LayoutWrapper>
         <Component {...pageProps} />
