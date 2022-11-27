@@ -1,5 +1,5 @@
 ---
-title: How actually Movies are Recommended to you and Build one yourself
+title: How Machine Learning Suggests you Movies or Shows you Watch
 date: '2022-11-25'
 tags: ['ml', 'recommenders']
 draft: false
