@@ -9,6 +9,10 @@ const GAScript = () => {
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${siteMetadata.analytics.googleAnalyticsId}`}
       />
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googleoptimize.com/optimize.js?id=OPT-K3RFVLH`}
+      />
       <Script strategy="lazyOnload" id="google-analytics">
         {`
             window.dataLayer = window.dataLayer || [];
