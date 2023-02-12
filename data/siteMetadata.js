@@ -59,7 +59,7 @@ const siteMetadata = {
     },
     disqus: {
       // https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-      shortname: 'aravind-chowdary',
+      shortname: 'kamaravichow',
     },
   },
 }

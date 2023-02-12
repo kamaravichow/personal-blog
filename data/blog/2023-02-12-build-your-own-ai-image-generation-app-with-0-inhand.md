@@ -4,7 +4,7 @@ date: '2023-02-12'
 tags: ['Image Generation','Machine Learning','Stable Diffusion']
 draft: false
 summary: AI Image generation tools like Dall-E, Mid journey and Stable Diffusion are getting quite a hype these days. As an aspiring dev and a sheep who follows all kinds of trends, you might be interested in making your own app or a feature in your existing app that will generate images from text.
-images: []
+images: ["/static/img/thumb-ai-img-eng-12-02-2023.jpg"]
 layout: PostLayout
 ---
 
