@@ -1,7 +1,7 @@
 ---
 title: Scoring TMDB movies and shows using Knowledge Based Recommendations
 date: '2022-11-25'
-tags: ['ml', 'recommenders']
+tags: ['Machine Learning', 'Recommenders']
 draft: false
 summary: Scoring movies using Weighted Ranking just like how iMDB does on their site using a little math formula
 images: []

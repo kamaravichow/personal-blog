@@ -1,7 +1,7 @@
 ---
 title: No one is going to steal your Idea
 date: '2022-12-24'
-tags: ['startups','founders']
+tags: ['Startups','Founders']
 draft: false
 summary: The worst excuse of all is being scared of having your idea stolen
 images: []

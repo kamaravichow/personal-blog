@@ -1,7 +1,7 @@
 ---
 title: How Machine Learning Suggests you Movies or Shows you Watch
 date: '2022-11-25'
-tags: ['ml', 'recommenders']
+tags: ['Machine Learning', 'Recommenders']
 draft: false
 summary: Recommendation systems are pretty common these days. Netflix, Prime Video, YouTube and other streaming platforms use these recommendation systems to suggest a movie that you might like to watch according to your previous watch history.
 images: []
