@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Aravind Chowdary | Personal Portfolio & Blog',
   author: 'Aravind Chowdary Kamani',
   headerTitle: 'Aravind Chowdary',
-  description: "As a hobbyist mobile app developer skilled in Kotlin, Java, Dart, Python, and various frameworks and technologies, Aravind showcases his diverse array of side projects here. Additionally, his blog serves as a platform for sharing his wealth of knowledge with the world. Explore his website to discover the latest updates on his creations and insights into his development process",
+  description: "As a hobbyist mobile app developer skilled in Kotlin, Java, Dart, Python, and various frameworks and technologies. Additionally, this blog serves as a platform for sharing my wealth of knowledge with the world. Explore his website to discover the latest updates on my creations and insights into my development process",
   language: 'en-us',
   siteUrl: 'https://www.aravi.me',
   siteRepo: 'https://github.com/kamaravichow/',
