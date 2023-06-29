@@ -156,4 +156,44 @@ class HeroesScreen extends StatelessWidget {
 
 Run your app, and tap the red box. Tada! You should see the 'Hero' animation in action. The red box smoothly expands as you transition to the 'HeroDetailScreen'.
 
-This is just
+This is just the tip of the iceberg when it comes to the possibilities you can explore with 'Hero' animations. You might be wondering, can I animate more than just size and position? Absolutely, and Flutter makes it simple too!
+
+
+## Step 5: Customizing Your Hero Animation
+
+To customize the Hero Animation, you can use the 'flightShuttleBuilder' property of the Hero Widget. This allows you to change what happens during the transition. Let's change our code to add a rotation during the flight.
+
+```dart
+Hero(
+  tag: 'hero1',
+  flightShuttleBuilder: (
+    BuildContext flightContext,
+    Animation<double> animation,
+    HeroFlightDirection flightDirection,
+    BuildContext fromHeroContext,
+    BuildContext toHeroContext,
+  ) {
+    return RotationTransition(
+      turns: animation,
+      child: Container(
+        height: 200.0,
+        width: 200.0,
+        color: Colors.red,
+      ),
+    );
+  },
+  child: Container(
+    height: 50.0,
+    width: 50.0,
+    color: Colors.red,
+  ),
+),
+```
+
+Isn't that cool? Now, when you navigate to the 'HeroDetailScreen', your hero not only grows in size, but also completes a sweet rotation!
+
+## In Summary
+
+You're now equipped with the knowledge to make your own custom Hero animations in Flutter! This is a great way to make your app more interactive and visually engaging. Remember, practicing is the key to mastering any new skill, so go ahead and experiment with different widgets and animations. The more you practice, the easier it'll become.
+
+We certainly hope you enjoy transforming your Flutter app with Hero animations as much as we have enjoyed guiding you through it. Don't be shy in sharing your exciting heroic endeavors with the Flutter community. Keep fluttering, and most importantly, keep having fun!
