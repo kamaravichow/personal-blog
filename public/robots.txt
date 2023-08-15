@@ -28,6 +28,8 @@ User-agent: psbot
 Disallow:/
 User-agent: yahoo-blogs/v3.9
 Disallow: 
+User-agent: GPTBot
+Disallow:/
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
