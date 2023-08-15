@@ -27,9 +27,6 @@ const siteMetadata = {
     provider: 'disqus', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       repo: '', // username/repoName
-      // Visit the link below, enter your repo in the configuration section and copy the script data parameters
-      // Before that you should create a new Github discussions category with the Announcements type so that new discussions can only be created by maintainers and giscus
-      // https://giscus.app/
       repositoryId: '',
       category: '',
       categoryId: '',
@@ -58,7 +55,6 @@ const siteMetadata = {
       darkTheme: '',
     },
     disqus: {
-      // https://help.disqus.com/en/articles/1717111-what-s-a-shortname
       shortname: 'kamaravichow',
     },
   },
