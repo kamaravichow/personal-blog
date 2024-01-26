@@ -13,4 +13,4 @@ Besides I love to build mobile apps and write some technical blogs.
 
 On this blog, I write beginner-friendly programming tutorials to help people who are getting started to learn to code.
 
-Alias : Aravind Chowdary K
+Alias : Aravind Chowdary K (Aravi)
